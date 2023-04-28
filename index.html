@@ -8,114 +8,171 @@
 		<link rel = "icon" href = "scientific-literature.png" type = "image/x-icon">
 		<link rel="stylesheet" href="estilos/style.css">
 		<style>
-			body{
-				background-color: #8b84ff;
-				font: Lucida, Verdana;
-				margin: 20px;
-				line-height: 26px;
+			* {
+			  box-sizing: border-box;
 			}
 			
-			h1 {
-				font-family: Arial;
-				font-size: 30pt;
-				color: blue;
-				text-shadow: 1px 1px 1px black;
-				text-align: center;
+			body {
+			  margin: 0;
 			}
-			p{
-				font-family: Verdana, Geneva, Tahoma, sans-serif;
-				font-size: 20px;
+			
+			/* Style the header */
+			.header {
+			  background-color: rgba(39, 159, 189, 0.957);
+			  width: 100%;
+			  padding: 10px;
+			  text-align: center;
 			}
-		</style>
+			
+			/* Style the top navigation bar */
+			.topnav {
+			  width: 100%;
+			  height: 60px;
+			  overflow: hidden;
+			  background-color:rgba(98, 187, 172, 0.712);"
+			}
+			
+			/* Style the topnav links */
+			.topnav a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 18px 30px;
+			  text-decoration: none;
+			}
+			
+			/* Change color on hover */
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			/* Create three equal columns that floats next to each other */
+			.column {
+ 			 float: justify;
+ 			 width: 33.33%;
+ 			 padding: 5px;
+				}
+
+			/* Clear floats after the columns */
+			.row::after {
+			content: "";
+			display: table;
+			clear: both;
+			}
+
+			/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+			@media screen and (max-width:600px) {
+			.column {
+				width: 100%;
+			
+			}
+		}
+	
+			</style>
+			<body>
+			
+			<div class="header">
+			  <h1>A Literatura e suas interessantes relações com a ciência</h1>
+			</div>
+			
+			<div class="topnav">
+			  <center>
+				<table>
+			  		<tr>
+						<th><a href="index.html">INÍCIO</a></th>
+			 	 		<th><a href="page.recomendacao.html">RECOMENDAÇÕES DE LIVROS</a></th>
+					</tr>
+				</table>
+			</center>
+			</div>
+
 	</head>
 	<body>
-	<div id="interface">
-		<header id="cabecalho">
-		<hgroup>
-		<h1><center>A Literatura e suas interessantes relações com a ciência</center></h1>
-		<h2>See some of the best writers in the world and their best writings</h2>
-		</hgroup>
-	</header>
-	<!-- <p> This is a html table with border-spacing</p> -->
-	<table style="border:3px solid blue; border-spacing: 13px;">
-		<tr> <!-- table row (linha da tabela) -->
-		<!-- table with padding | with spacing - SEARCH-->
-			<th style="border:2px solid blue;">NAME</th> <!-- table header -->
-			<th style="border:2px solid blue;">COUNTRY</th>
-			<th style="border:2px solid blue;">Best Seller</th>
-		</tr>
-		<tr>
-			<!-- table data = dados da tabela - define a coluna -->
-			<td style="border:2px solid blue;"><center>Fiódor Dostoiévsky</center></td> 
-			<td style="border:2px solid blue;"><center>Russia</center></td>
-			<td style="border:2px solid blue;"><center>Crime e Castigo</center></td>
-		</tr>
-		<tr>
-			<td style="border:2px solid blue;"><center>Victor Hugo</center></td>
-			<td style="border:2px solid blue;"><center>France</center></td>
-			<td style="border:2px solid blue;"><center>Os miseráveis</center></td>
-		</tr>
-		<tr>
-			<td style="border:2px solid blue;"><center>Jorge Amado</center></td>
-			<td style="border:2px solid blue;"><center>Brazil</center></td>
-			<td style="border:2px solid blue;"><center>Capitães de Areia</center></td>
-		</tr>
-	</table>
 
-	<p> This is a html table with border-padding</p>
-	<table style="border:3px solid blue;">
-		<tr> <!-- table row (linha da tabela) -->
-		<!-- table with padding | with spacing - SEARCH-->
-			<th style="border:2px solid blue;">NAME</th> <!-- table header -->
-			<th style="border:2px solid blue;">COUNTRY</th>
-			<th style="border:2px solid blue;">Best Seller</th>
-		</tr>
-		<tr>
-			<!-- table data = dados da tabela - define a coluna -->
-			<td style="border:2px solid blue;"><center>Fiódor Dostoiévsky</center></td> 
-			<td style="border:2px solid blue;"><center>Russia</center></td>
-			<td style="border:2px solid blue;"><center>Crime e Castigo</center></td>
-		</tr>
-		<tr>
-			<td style="border:2px solid blue;"><center>Victor Hugo</center></td>
-			<td style="border:2px solid blue;"><center>France</center></td>
-			<td style="border:2px solid blue;"><center>Os miseráveis</center></td>
-		</tr>
-		<tr>
-			<td style="border:2px solid blue;"><center>Jorge Amado</center></td>
-			<td style="border:2px solid blue;"><center>Brazil</center></td>
-			<td style="border:2px solid blue;"><center>Capitães de Areia</center></td>
-		</tr>
-	</table>
+	<main>
+	<center>
+		<div class="main">
 
-	<p> This is a html table with border-collapse</p>
-	<table style="border:3px solid blue; border-collapse: collapse;">
-		<tr> <!-- table row (linha da tabela) -->
-		<!-- table with padding | with spacing - SEARCH-->
-			<th style="border:2px solid blue; padding: 5px;">NAME</th> <!-- table header -->
-			<th style="border:2px solid blue; padding: 5px;">COUNTRY</th>
-			<th style="border:2px solid blue; padding: 5px;">Best Seller</th>
-		</tr>
-		<tr>
-			<!-- table data = dados da tabela - define a coluna -->
-			<td style="border:2px solid blue; padding: 5px;"><center>Fiódor Dostoiévsky</center></td> 
-			<td style="border:2px solid blue; padding: 5px;"><center>Russia</center></td>
-			<td style="border:2px solid blue; padding: 5px;"><center>Crime e Castigo</center></td>
-		</tr>
-		<tr>
-			<td style="border:2px solid blue; padding: 5px;"><center>Victor Hugo</center></td>
-			<td style="border:2px solid blue; padding: 5px;"><center>France</center></td>
-			<td style="border:2px solid blue; padding: 5px;"><center>Os miseráveis</center></td>
-		</tr>
-		<tr>
-			<td style="border:2px solid blue; padding: 5px;"><center>Jorge Amado</center></td>
-			<td style="border:2px solid blue; padding: 5px;"><center>Brazil</center></td>
-			<td style="border:2px solid blue; padding: 5px;"><center>Capitães de Areia</center></td>
-		</tr>
-	</table>
-	<p> <center>Copyright &copy; 2023 - by Gean Martins</center>
-		<br> <center>Facebook | Instagram</center>
+		<h1>Bem vindo ao Science&Literature!</h1>
+		</div>
+		<div class="row">
+		<div class="column">
+			</div>
+		
+
+			<div class="column">
+				<p>A utilização da Literatura no ensino, permite que haja boas estratégias para facilitar a aprendizagem e estimular o indivíduo a sempre estar em busca do conhecimento. 
+				<br>
+				Esta é uma página que traz curiosidades acerca da Literatura, fofocas literárias <em>(eita boy rs)</em>, e o seu uso para com a ciência.
+				<br>Bora?!</p>
+				<b>"Knowledge is everything"</b>, Thomas Hobbes (1668).
+	
+
+				<br>
+			</div>
+
+			<div class="column">
+	
+			</div>
+		</div>
+		<br>
+		<hr>
+		<p>
+		Desde os primórdios da humanidade, para que os seres humanos sobrevivessem, precisaram aprender uma maneira de se comunicarem. Através de ruídos e sons, conseguiram se adaptar ao ambiente e à fauna local. Com o passar do tempo, aprenderam a se comunicarem com símbolos escritos, através de pedras pontiagudas desenhando nas cavernas. Os estudiosos da Arqueologia acreditam que esta foi a primeira forma de comunicação escrita, a escrita <a href="https://www.ufmg.br/espacodoconhecimento/historia-escrita/"><b>cuneiforme</b></a>.	
+		</p>
+
+			<img width="25%" height="40%" src="cuneiforme.jpg">
+			<p>
+				<center><b>Pedra com escrita cuneiforme</b>. Fonte: <a href="https://www.labrujulaverde.com/2015/05/6-cosas-deberias-saber-sobre-escritura-cuneiforme">https://www.labrujulaverde.com/2015/05/6-cosas-deberias-saber-sobre-escritura-cuneiforme</a>
+				</center>
+			</p>
+			<br>
+		<p>
+		&#09 A partir daí, fomos evoluindo e encontramos a escrita com o papiro. Desde então, utilizamos a escrita para tudo.
+		<br>
+		E assim, chegamos a diversos avanços como a ciência e a sua ascensão com o capitalismo.
+		<br>
+		<br>
+		Este é o começo da página, onde você verá como foi o processo do "nascimento" da Literatura e sua importância para com a ciência.
+		<br>
+		O que seria de nós, hoje, sem a escrita? O que a Literatura ajudou desde a primeira escrita no primeiro papiro? Aos poucos, você acompanhará aqui. 
+		<br>
+		<hr>
+		<br>
+		<div class="row">
+			<div class="column">
+			</div>
+
+			<div class="row">
+			<div class="column">
+				<p></p>
+			</div>
+
+			<div class="row">
+			<div class="column">
+				<h2>É um amante da Literatura também?</h2>
+				<p>Entre em contato comigo por alguma dessas redes aqui embaixo. Pode dar dicas de livros, se quiser haha</p>
+		</div>
+		</p>
+		
+    </center>
+		
+	</main>
+	
+	<br>
+	<p> 
+	
+		<center>Copyright &copy; 2023 - by Gean Martins</center>
+	    <br>
+		<center><a href="https://www.facebook.com/gean.martins.399488/">Facebook</a>|
+		<a href="https://www.linkedin.com/in/gean-martins-2568981ba/">LinkedIn</a> |
+		<a href="https://www.instagram.com/oxegean/">Instagram</a></center>
+
 	</p>
+	<footer>
+		<a href="https://github.com/oxegean">@oxegean</a>
+	</footer>
     </div>
 	</body>
 </html>

@@ -1,1 +1,45 @@
+body {
+    background-color: #b5c5ea;
+    opacity: 0,5;
+}
 
+h1 {
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-size: 25pt;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Inter' sans-serif;
+    font-size: 14pt;
+    color: black;
+    text-align: justify;
+
+}
+
+body {text-align: inherit;
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+footer{
+    background-color: rgba(98, 187, 172, 0.712);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer > a {
+    color: black;
+}
