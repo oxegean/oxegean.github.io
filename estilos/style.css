@@ -1,5 +1,5 @@
 body {
-    background-color: #b5c5ea;
+    background-color:blanchedalmond;
     opacity: 0,5;
 }
 
@@ -26,10 +26,44 @@ img {
     border-radius: 10px;
 }
 
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     font-size: 18px;
     text-align: justify;
+}
+#area{
+    position:absolute
+    width: 250px;
+    height: 150px;
+}
+#area #form{
+    position: absolute;
+    display: block;
+}
+fieldset{
+    width: 400px;
+    height: 250px;
+}
+legend{
+    font-weight: bold;
+    font-family: "Segoe UI", "Arial", "Lucida Sans";
+}
+#form label{
+    position: absolute;
+    left: 19px;
+    margin-right: 5px;
+}
+#form input.name{
+    position: absolute;
+    left: 95px;
+    top: 23px;
+    width: 225px;
+}
+#form input.email{
+    position: absolute;
+    left: 95px;
+    margin-top: 2px;
+    width: 225px;
 }
 footer{
     background-color: rgba(98, 187, 172, 0.712);
