@@ -31,8 +31,100 @@ p{
     font-size: 18px;
     text-align: justify;
 }
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+.content{
+    background: lightsteelblue;
+    padding: 20px 0 80px;
+    border-top: 1px solid #e3e3e3;
+    color: #242c2c;
+}
+
+.content h3{
+    font-size: 21px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: 14px;
+    word-spacing: 3px;
+}
+
+.button{
+    padding: 15px 40px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.button__skoob{
+    background-color: #242c2c;
+}
+
+.button__bookpub{
+    background-color: #242c2c;
+}
+
+.button:hover{
+    background-color: #586165;
+    transition: .5s;
+}
+
+.images__title{
+    background-color: cadetblue;
+    padding: 5px 0;
+}
+
+.images__title h2{
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.images__thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0px;
+}
+
+.images__thumbs img{
+    display: block;
+    width: 100%;
+}
+
+.slider{
+    background-color: #242c2c;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.slideshow figure{
+    display: inline-block;
+}
+
+.slideshow{
+    white-space: nowrap;
+}
+
+.slideshow figure img{
+    max-height: 503px;
+}
 #area{
-    position:absolute
+    position:absolute;
     width: 250px;
     height: 150px;
 }
